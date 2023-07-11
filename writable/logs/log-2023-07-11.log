@@ -1,0 +1,538 @@
+CRITICAL - 2023-07-11 02:55:08 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-11 02:56:35 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-11 02:59:39 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-07-11 03:39:44 --> Class "CodeIgniter\Database\postgres\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 137.
+ 1 SYSTEMPATH\Database\Database.php(55): CodeIgniter\Database\Database->initDriver('postgres', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\Home.php(34): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:52:29 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:52:29 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:10 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:10 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:13 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:13 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:43 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:43 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:44 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:44 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:44 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:44 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:45 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:45 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:45 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:45 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:46 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:46 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:46 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:46 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:53:47 --> Error connecting to the database: ErrorException: Undefined array key 1 in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:111
+Stack trace:
+#0 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 111)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(69): CodeIgniter\Database\Postgre\Connection->convertDSN()
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:53:47 --> Unable to connect to the database.
+Main connection [Postgre]: Undefined array key 1
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:55:01 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Elvis� in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:55:01 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Elvis�
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:55:50 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Elvis� in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:55:50 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Elvis�
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:56:57 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:56:57 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:56:58 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:56:58 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:56:59 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:56:59 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:56:59 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:56:59 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:57:01 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:57:01 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:57:10 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:57:10 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: received invalid response to SSL negotiation: X
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 03:59:22 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(72): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 03:59:22 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario;')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 04:19:03 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...ail, contrasena FROM public.usuario where '$email', '$contra...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(187): pg_query(Resource id #134, 'SELECT id, nomb...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, nomb...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, nomb...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('$email', '$contrasena')
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 04:19:03 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...ail, contrasena FROM public.usuario where '$email', '$contra...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...ail, contrasena FROM public.usuario where \'$email\', \'$contra...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 187)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query(resource (pgsql link), 'SELECT id, nombre, email, contrasena FROM public.usuario where \'$email\', \'$contrasena\' ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, nombre, email, contrasena FROM public.usuario where \'$email\', \'$contrasena\' ;')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, nombre, email, contrasena FROM public.usuario where \'$email\', \'$contrasena\' ;')
+ 5 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario where \'$email\', \'$contrasena\' ;')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('$email', '$contrasena')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-11 04:19:49 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...ail, contrasena FROM public.usuario where '(:any)', '(:any)'...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 187)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(187): pg_query(Resource id #134, 'SELECT id, nomb...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, nomb...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, nomb...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nomb...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(932): App\Controllers\Home->testbd('(:any)', '(:any)')
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-11 04:19:49 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...ail, contrasena FROM public.usuario where '(:any)', '(:any)'...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «,»
+LINE 1: ...ail, contrasena FROM public.usuario where \'(:any)\', \'(:any)\'...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 187)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(187): pg_query(resource (pgsql link), 'SELECT id, nombre, email, contrasena FROM public.usuario where \'(:any)\', \'(:any)\' ;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, nombre, email, contrasena FROM public.usuario where \'(:any)\', \'(:any)\' ;')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, nombre, email, contrasena FROM public.usuario where \'(:any)\', \'(:any)\' ;')
+ 5 APPPATH\Controllers\Home.php(37): CodeIgniter\Database\BaseConnection->query('SELECT id, nombre, email, contrasena FROM public.usuario where \'(:any)\', \'(:any)\' ;')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->testbd('(:any)', '(:any)')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 04:31:15 --> syntax error, unexpected identifier "hola", expecting ")"
+in APPPATH\Controllers\Home.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 04:32:00 --> syntax error, unexpected identifier "hola", expecting ")"
+in APPPATH\Controllers\Home.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 04:32:01 --> syntax error, unexpected identifier "hola", expecting ")"
+in APPPATH\Controllers\Home.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-11 04:32:02 --> syntax error, unexpected identifier "hola", expecting ")"
+in APPPATH\Controllers\Home.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ci4\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
